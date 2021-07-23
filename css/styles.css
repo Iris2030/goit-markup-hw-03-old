@@ -183,7 +183,11 @@ ul {
 
 .aspects-section-title,
 .filter-section-title {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .text-title {
@@ -205,7 +209,7 @@ ul {
   display: flex;
 }
 
-.team {
+.team-flex {
   display: flex;
 }
 
@@ -225,7 +229,12 @@ ul {
 .team-list-item {
   width: 270;
   margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-background-colore);
 }
+
 .team-list-item:nth-child(4n) {
   margin-right: 0;
 }
@@ -239,10 +248,15 @@ ul {
   margin-bottom: 10px;
 }
 
-.team-text {
+.team-list-profession {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.team-list-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .services-list-item {
