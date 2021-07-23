@@ -24,6 +24,12 @@ ul {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -45,12 +51,6 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.flex-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /*page-nav */
@@ -129,6 +129,7 @@ ul {
 .hero {
   text-align: center;
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-button {
@@ -174,15 +175,14 @@ ul {
 }
 
 .aspects-list-item {
-  width: 270px;
+  flex-basis: 270px;
   margin-right: 30px;
 }
 .aspects-list-item:nth-child(4n) {
   margin-right: 0;
 }
 
-.aspects-section-title,
-.filter-section-title {
+.visibiity-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -224,6 +224,10 @@ ul {
 
 .our-team-section {
   background-color: var(--secondary-background-colore);
+}
+
+.our-work-section {
+  padding-top: 0;
 }
 
 .team-list-item {
@@ -272,6 +276,8 @@ ul {
 
 .page-footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .accent-footer {
@@ -281,6 +287,7 @@ ul {
 .address {
   color: var(--main-background-colore);
   font-style: normal;
+  margin-top: 20px;
 }
 
 .address-list-item {
@@ -292,29 +299,15 @@ ul {
   color: var(--accent-color);
 }
 
-.footer-address-list {
-  margin-top: 20px;
-}
-
 .footer-list-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer-list-item:last-child {
-  padding-bottom: 0;
-}
-
-.footer-container {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  margin-bottom: 0;
 }
 
 /*portfolio page*/
-
-.filter {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .filter-button {
   font-family: inherit;
@@ -325,6 +318,7 @@ ul {
   line-height: 1.62;
   border: transparent;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -358,7 +352,7 @@ ul {
 
 .portfolio-flex-container {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -367,7 +361,6 @@ ul {
 }
 
 .gallery-item {
-  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -382,4 +375,5 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
